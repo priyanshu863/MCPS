@@ -1,0 +1,143 @@
+/* Color Variables for Clinical Consistency */
+:root {
+    --primary-blue: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-gradient: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    --emergency-red: #dc2626;
+    --warning-amber: #b45309;
+    --text-main: #374151;
+    --border-color: #d1d5db;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Container & Card */
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-blue);
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.header p {
+    color: #dbeafe;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Form Layout */
+.form-content {
+    padding: 2rem;
+}
+
+.alert-banner {
+    background-color: #fffbeb;
+    border-left: 4px solid #fbbf24;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.35rem;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus, .input-group select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Buttons */
+.btn-login {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.btn-login:hover {
+    background-color: var(--primary-hover);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.emergency-link {
+    color: var(--emergency-red);
+    font-weight: 600;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Regulatory Footer */
+.compliance-footer {
+    background-color: #f9fafb;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #f3f4f6;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
