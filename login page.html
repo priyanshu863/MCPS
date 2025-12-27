@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareSync | Missed Care Prevention Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%); }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden">
+        <div class="bg-blue-600 p-6 text-center">
+            <h1 class="text-white text-2xl font-bold tracking-tight">CareSync Admin</h1>
+            <p class="text-blue-100 text-sm mt-1">Missed Care Prevention Portal</p>
+        </div>
+
+        <div class="p-8">
+            <div class="mb-6 bg-amber-50 border-l-4 border-amber-400 p-3 flex items-center">
+                <div class="ml-3">
+                    <p class="text-xs text-amber-700 font-medium uppercase tracking-wider">System Status</p>
+                    <p class="text-sm text-amber-800 font-semibold">ICU Ward: 4 Pending Tasks</p>
+                </div>
+            </div>
+
+            <form action="#" method="POST" class="space-y-5">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Employee ID</label>
+                    <input type="text" placeholder="EMP-12345" required
+                        class="w-full mt-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Security Password</label>
+                    <input type="password" placeholder="••••••••" required
+                        class="w-full mt-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700">Current Assigned Unit</label>
+                    <select class="w-full mt-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                        <option>General Ward - Floor 2</option>
+                        <option>ICU / Critical Care</option>
+                        <option>Emergency Department</option>
+                        <option>Maternity & Pediatrics</option>
+                    </select>
+                </div>
+
+                <button type="submit" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow-lg transition-colors duration-200">
+                    Log In to Dashboard
+                </button>
+
+                <div class="flex items-center justify-between text-sm mt-4">
+                    <a href="#" class="text-blue-600 hover:underline">Forgot ID?</a>
+                    <span class="text-gray-400">|</span>
+                    <button type="button" class="text-red-600 font-medium hover:text-red-800">EMERGENCY VIEW</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bg-gray-50 p-4 border-t border-gray-100 text-center">
+            <p class="text-xs text-gray-500">
+                Authorized Personnel Only. <br> 
+                HIPAA / GDPR Compliant Data Access.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
